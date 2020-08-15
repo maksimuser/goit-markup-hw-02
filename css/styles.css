@@ -1,8 +1,7 @@
-/* основной цвет текста primery  #757575 */
-/* вторичный цвет текста title #212121 */
+/* основной цвет текста primary  #757575 */
+/* вторичный цвет текста secondary #212121 */
 /* цвет акцента и для текста logo "Web" #2196F3  */
 /* цвет текста, акцент btn-filter #FFFFFF */
-
 /* цвет текста футера tel. and mail  rgba(255, 255, 255, 0.6); */
 /* цвет текста header logo "Studio" #000000 */
 
@@ -11,27 +10,39 @@
 /* цвет фона героя и футера #2F303A */
 
 :root {
-	--primery-text-color: #757575;
-	--title-text-color: #212121;
-	--text-accent-color: #ffffff;
+	--primary-text-color: #212121;
+	--secondary-text-color: #757575;
+	--primary-white-color: #ffffff;
 	--accent-color: #2196f3;
+	--logo-text-color: #000000;
+	--footer-contacts-color: rgba(255, 255, 255, 0.6);
+	--secondary-bg-color: #2f303a;
+	--section-bg-color: #f5f4fa;
 }
 
 body {
-	background-color: #ffffff;
-	color: var(--primery-text-color);
+	background-color: var(--primary-white-color);
+	color: var(--primary-text-color);
 }
+
+ul,
+a {
+	list-style: none;
+	text-decoration: none;
+}
+
 /* logo header */
 .logo {
 	color: var(--accent-color);
 }
+
 .logo-black {
-	color: #000000;
+	color: var(--logo-text-color);
 }
 
 /* site-nav */
 .site-nav .link {
-	color: var(--title-text-color);
+	color: var(--primary-text-color);
 }
 
 .site-nav .link:hover,
@@ -39,9 +50,13 @@ body {
 	color: var(--accent-color);
 }
 
+.site-nav .link.current {
+	color: var(--accent-color);
+}
+
 /* site-contacts */
 .site-contacts .link {
-	color: var(--primery-text-color);
+	color: var(--secondary-text-color);
 }
 .site-contacts .link:hover,
 .site-contacts .link:focus {
@@ -50,20 +65,54 @@ body {
 
 /* Hero */
 .hero {
-	background-color: #2f303a;
-	color: var(--text-accent-color);
+	background-color: var(--secondary-bg-color);
+	color: var(--primary-white-color);
+}
+
+.button.hero {
+	background-color: var(--accent-color);
+	color: var(--primary-white-color);
 }
 
 /* SECTION */
-.section .section-title {
-	color: var(--title-text-color);
+.section .section-text {
+	color: var(--secondary-text-color);
+}
+
+.section.team {
+	background-color: var(--section-bg-color);
 }
 
 /* FOOTER */
 .footer {
-	background-color: #2f303a;
+	background-color: var(--secondary-bg-color);
 }
+
 /* logo footer */
 .logo-white {
-	color: var(--text-accent-color);
+	color: var(--primary-white-color);
+}
+
+/* address */
+.address-text {
+	color: var(--primary-white-color);
+}
+
+.address-list .item {
+	color: var(--footer-contacts-color);
+}
+
+.address-list .item:hover,
+.address-list .item:focus {
+	color: var(--accent-color);
+}
+
+/* CSS Portfolio */
+.button.filter {
+	color: var(--primary-text-color);
+}
+.button.filter:hover,
+.button.filter:focus {
+	background-color: var(--accent-color);
+	color: var(--primary-white-color);
 }
