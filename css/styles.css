@@ -1,0 +1,69 @@
+/* основной цвет текста primery  #757575 */
+/* вторичный цвет текста title #212121 */
+/* цвет акцента и для текста logo "Web" #2196F3  */
+/* цвет текста, акцент btn-filter #FFFFFF */
+
+/* цвет текста футера tel. and mail  rgba(255, 255, 255, 0.6); */
+/* цвет текста header logo "Studio" #000000 */
+
+/* основной цвет фона страниц #FFFFFF */
+/* вторичный цвет фона (секция наша команда) #F5F4FA */
+/* цвет фона героя и футера #2F303A */
+
+:root {
+	--primery-text-color: #757575;
+	--title-text-color: #212121;
+	--text-accent-color: #ffffff;
+	--accent-color: #2196f3;
+}
+
+body {
+	background-color: #ffffff;
+	color: var(--primery-text-color);
+}
+/* logo header */
+.logo {
+	color: var(--accent-color);
+}
+.logo-black {
+	color: #000000;
+}
+
+/* site-nav */
+.site-nav .link {
+	color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+	color: var(--accent-color);
+}
+
+/* site-contacts */
+.site-contacts .link {
+	color: var(--primery-text-color);
+}
+.site-contacts .link:hover,
+.site-contacts .link:focus {
+	color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+	background-color: #2f303a;
+	color: var(--text-accent-color);
+}
+
+/* SECTION */
+.section .section-title {
+	color: var(--title-text-color);
+}
+
+/* FOOTER */
+.footer {
+	background-color: #2f303a;
+}
+/* logo footer */
+.logo-white {
+	color: var(--text-accent-color);
+}
