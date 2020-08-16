@@ -10,8 +10,8 @@
 /* цвет фона героя и футера #2F303A */
 
 :root {
-	--primary-text-color: #212121;
-	--secondary-text-color: #757575;
+	--primary-text-color: #757575;
+	--secondary-text-color: #212121;
 	--primary-white-color: #ffffff;
 	--accent-color: #2196f3;
 	--logo-text-color: #000000;
@@ -42,7 +42,7 @@ a {
 
 /* site-nav */
 .site-nav .link {
-	color: var(--primary-text-color);
+	color: var(--secondary-text-color);
 }
 
 .site-nav .link:hover,
@@ -56,7 +56,7 @@ a {
 
 /* site-contacts */
 .site-contacts .link {
-	color: var(--secondary-text-color);
+	color: var(--primary-text-color);
 }
 .site-contacts .link:hover,
 .site-contacts .link:focus {
@@ -75,12 +75,15 @@ a {
 }
 
 /* SECTION */
-.section .section-text {
+.section .section-title {
 	color: var(--secondary-text-color);
 }
 
 .section.team {
 	background-color: var(--section-bg-color);
+}
+.team .section-subtitle {
+	color: var(--secondary-text-color);
 }
 
 /* FOOTER */
@@ -109,7 +112,7 @@ a {
 
 /* CSS Portfolio */
 .button.filter {
-	color: var(--primary-text-color);
+	color: var(--secondary-text-color);
 }
 .button.filter:hover,
 .button.filter:focus {
